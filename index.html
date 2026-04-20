@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Elite Electronics – India's premium electronics store. Best deals on AC, TV, Laptops, Smartphones and more."/>
+  <title>Elite Electronics – Premium Electronics Store</title>
+
+  <!-- FAVICON – inline base64 so it works without a server -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwYTZlZmQiLz48cG9seWdvbiBwb2ludHM9IjIwLDMgMTEsMTggMTcsMTggMTIsMjkgMjMsMTIgMTcsMTIiIGZpbGw9IiNmN2M5NDgiLz48L3N2Zz4="/>
+  <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwYTZlZmQiLz48cG9seWdvbiBwb2ludHM9IjIwLDMgMTEsMTggMTcsMTggMTIsMjkgMjMsMTIgMTcsMTIiIGZpbGw9IiNmN2M5NDgiLz48L3N2Zz4="/>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span><i class="fas fa-bolt"></i> Free shipping above ₹999 | Use code <b>ELITE10</b> for 10% OFF</span>
+    <span class="tb-right"><i class="fas fa-phone-alt"></i> 1800-123-4567 &nbsp;|&nbsp; <i class="fas fa-clock"></i> Mon–Sat 9am–8pm</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+    <span class="logo-text">Elite<span class="accent">Electronics</span></span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="#products" class="nav-link">Shop</a>
+
+    <div class="dropdown">
+      <a class="nav-link dropdown-toggle">Categories <i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-menu mega-menu">
+        <div class="mega-col">
+          <h5><i class="fas fa-home"></i> Appliances</h5>
+          <a href="category.html?cat=ac"><i class="fas fa-snowflake"></i> Air Conditioners</a>
+          <a href="category.html?cat=cooler"><i class="fas fa-wind"></i> Air Coolers</a>
+          <a href="category.html?cat=fan"><i class="fas fa-fan"></i> Fans</a>
+          <a href="category.html?cat=fridge"><i class="fas fa-temperature-low"></i> Refrigerators</a>
+          <a href="category.html?cat=washer"><i class="fas fa-tshirt"></i> Washing Machines</a>
+        </div>
+        <div class="mega-col">
+          <h5><i class="fas fa-tv"></i> Entertainment</h5>
+          <a href="category.html?cat=tv"><i class="fas fa-tv"></i> Televisions</a>
+          <a href="category.html?cat=soundbar"><i class="fas fa-volume-up"></i> Soundbars</a>
+          <a href="category.html?cat=speaker"><i class="fas fa-music"></i> Speakers</a>
+          <a href="category.html?cat=projector"><i class="fas fa-film"></i> Projectors</a>
+        </div>
+        <div class="mega-col">
+          <h5><i class="fas fa-laptop"></i> Computers</h5>
+          <a href="category.html?cat=laptop"><i class="fas fa-laptop"></i> Laptops</a>
+          <a href="category.html?cat=desktop"><i class="fas fa-desktop"></i> Desktops</a>
+          <a href="category.html?cat=monitor"><i class="fas fa-tv"></i> Monitors</a>
+          <a href="category.html?cat=printer"><i class="fas fa-print"></i> Printers</a>
+        </div>
+        <div class="mega-col">
+          <h5><i class="fas fa-mobile-alt"></i> Mobiles</h5>
+          <a href="category.html?cat=smartphone"><i class="fas fa-mobile-alt"></i> Smartphones</a>
+          <a href="category.html?cat=tablet"><i class="fas fa-tablet-alt"></i> Tablets</a>
+          <a href="category.html?cat=earphone"><i class="fas fa-headphones"></i> Earphones</a>
+          <a href="category.html?cat=powerbank"><i class="fas fa-battery-full"></i> Power Banks</a>
+        </div>
+        <div class="mega-col">
+          <h5><i class="fas fa-brain"></i> Smart Devices</h5>
+          <a href="category.html?cat=smartbulb"><i class="fas fa-lightbulb"></i> Smart Bulbs</a>
+          <a href="category.html?cat=cctv"><i class="fas fa-video"></i> CCTV Cameras</a>
+          <a href="category.html?cat=smartwatch"><i class="fas fa-clock"></i> Smart Watches</a>
+          <a href="category.html?cat=doorbell"><i class="fas fa-bell"></i> Video Doorbell</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#deals" class="nav-link">Deals</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search products, brands…" autocomplete="off"/>
+      <button onclick="doSearch()"><i class="fas fa-search"></i></button>
+      <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
+    <button class="icon-btn" onclick="toggleWishlist()" title="Wishlist">
+      <i class="fas fa-heart"></i><span class="badge" id="wishlistCount">0</span>
+    </button>
+    <button class="icon-btn" onclick="toggleCart()" title="Cart">
+      <i class="fas fa-shopping-cart"></i><span class="badge" id="cartCount">0</span>
+    </button>
+    <button class="btn-login" onclick="toggleModal()"><i class="fas fa-user"></i> <span class="btn-login-text">Login</span></button>
+  </div>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ═══ 3D HERO SLIDER ══════════════════════════════════════════════════════ -->
+<section class="hero-slider-section" id="home" aria-label="Featured Deals">
+  <div class="slider-stage" id="sliderStage">
+
+    <!-- ── SLIDE 1 – Air Conditioner ── -->
+    <div class="slide" data-index="0" data-href="category.html?cat=ac">
+      <!-- Full-bleed background image -->
+      <div class="slide-bg">
+        <img src="https://thumbs.dreamstime.com/b/white-air-conditioner-blue-blowing-out-330903644.jpg"
+             alt="" aria-hidden="true" class="slide-bg-img"/>
+        <div class="slide-bg-overlay slide-ov-blue"></div>
+      </div>
+      <!-- Grid lines -->
+      <div class="slide-grid" aria-hidden="true"></div>
+      <!-- Content -->
+      <div class="slide-content">
+        <div class="slide-tag"><i class="fas fa-bolt"></i> Summer Sale</div>
+        <h2 class="slide-title">Stay Cool<br><span class="slide-accent">This Summer</span></h2>
+        <p class="slide-desc">Inverter ACs with 5-Star Rating &amp; Wi-Fi Control.<br>Free Installation included.</p>
+        <div class="slide-price-row">
+          <span class="slide-price">From ₹29,999</span>
+          <span class="slide-badge">−40% OFF</span>
+        </div>
+        <a href="category.html?cat=ac" class="slide-cta" onclick="event.stopPropagation()">
+          <i class="fas fa-shopping-bag"></i> Shop ACs
+        </a>
+      </div>
+      <!-- Product float card -->
+      <div class="slide-product-card">
+        <div class="spc-shine"></div>
+        <div class="spc-img">
+          <img src="https://www.meltonhvac.com/wp-content/uploads/2019/09/ductless-mini-split-2-resizedblog.jpg"
+               alt="Air Conditioner"/>
+        </div>
+        <div class="spc-info">
+          <span class="spc-brand">SAMSUNG</span>
+          <span class="spc-name">Wind-Free 1.5T AC</span>
+          <span class="spc-price">₹38,999 <del>₹58,999</del></span>
+          <div class="spc-stars">★★★★★ <span>4.8</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SLIDE 2 – Smart TV ── -->
+    <div class="slide" data-index="1" data-href="category.html?cat=tv">
+      <div class="slide-bg">
+        <img src="https://images.financialexpressdigital.com/2018/09/xiaomi_mi_tv.jpg"
+             alt="" aria-hidden="true" class="slide-bg-img"/>
+        <div class="slide-bg-overlay slide-ov-dark"></div>
+      </div>
+      <div class="slide-grid" aria-hidden="true"></div>
+      <div class="slide-content">
+        <div class="slide-tag"><i class="fas fa-tv"></i> New Arrivals</div>
+        <h2 class="slide-title">Cinema<br><span class="slide-accent">At Home</span></h2>
+        <p class="slide-desc">QLED 4K Smart TVs with Dolby Atmos &amp; HDR10+.<br>Stream everything, everywhere.</p>
+        <div class="slide-price-row">
+          <span class="slide-price">From ₹28,999</span>
+          <span class="slide-badge">−32% OFF</span>
+        </div>
+        <a href="category.html?cat=tv" class="slide-cta" onclick="event.stopPropagation()">
+          <i class="fas fa-shopping-bag"></i> Shop TVs
+        </a>
+      </div>
+      <div class="slide-product-card">
+        <div class="spc-shine"></div>
+        <div class="spc-img">
+          <img src="https://shop.haierindia.com/blog/wp-content/uploads/2024/12/Buying-a-LED-TV-5-1116x628.jpg.webp"
+               alt="Smart TV"/>
+        </div>
+        <div class="spc-info">
+          <span class="spc-brand">LG</span>
+          <span class="spc-name">55" OLED evo 4K TV</span>
+          <span class="spc-price">₹84,999 <del>₹1,24,999</del></span>
+          <div class="spc-stars">★★★★★ <span>4.9</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SLIDE 3 – Laptop ── -->
+    <div class="slide" data-index="2" data-href="category.html?cat=laptop">
+      <div class="slide-bg">
+        <img src="https://img.freepik.com/premium-photo/mockup-shot-laptop-computer-with-blank-white-screen-blue-purple-environment-lit-by-neon-lights_1028938-443724.jpg"
+             alt="" aria-hidden="true" class="slide-bg-img"/>
+        <div class="slide-bg-overlay slide-ov-purple"></div>
+      </div>
+      <div class="slide-grid" aria-hidden="true"></div>
+      <div class="slide-content">
+        <div class="slide-tag"><i class="fas fa-laptop"></i> Top Rated</div>
+        <h2 class="slide-title">Power Up<br><span class="slide-accent">Your Work</span></h2>
+        <p class="slide-desc">Core i7 &amp; M3 Ultrabooks with lightning-fast SSD.<br>Up to 26% off. Grab now.</p>
+        <div class="slide-price-row">
+          <span class="slide-price">From ₹54,999</span>
+          <span class="slide-badge">−26% OFF</span>
+        </div>
+        <a href="category.html?cat=laptop" class="slide-cta" onclick="event.stopPropagation()">
+          <i class="fas fa-shopping-bag"></i> Shop Laptops
+        </a>
+      </div>
+      <div class="slide-product-card">
+        <div class="spc-shine"></div>
+        <div class="spc-img">
+          <img src="https://png.pngtree.com/background/20230527/original/pngtree-the-laptop-is-showing-a-pink-picture-image_2753288.jpg"
+               alt="Laptop"/>
+        </div>
+        <div class="spc-info">
+          <span class="spc-brand">APPLE</span>
+          <span class="spc-name">MacBook Air M3 13"</span>
+          <span class="spc-price">₹1,19,900 <del>₹1,49,900</del></span>
+          <div class="spc-stars">★★★★★ <span>4.9</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SLIDE 4 – Smartphone ── -->
+    <div class="slide" data-index="3" data-href="category.html?cat=smartphone">
+      <div class="slide-bg">
+        <img src="https://images.fonearena.com/blog/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra.jpg"
+             alt="" aria-hidden="true" class="slide-bg-img"/>
+        <div class="slide-bg-overlay slide-ov-teal"></div>
+      </div>
+      <div class="slide-grid" aria-hidden="true"></div>
+      <div class="slide-content">
+        <div class="slide-tag"><i class="fas fa-mobile-alt"></i> Best Seller</div>
+        <h2 class="slide-title">Next-Gen<br><span class="slide-accent">Smartphones</span></h2>
+        <p class="slide-desc">Flagship 5G phones with 200MP cameras.<br>Up to 25% off, limited-time offer.</p>
+        <div class="slide-price-row">
+          <span class="slide-price">From ₹12,999</span>
+          <span class="slide-badge">−25% OFF</span>
+        </div>
+        <a href="category.html?cat=smartphone" class="slide-cta" onclick="event.stopPropagation()">
+          <i class="fas fa-shopping-bag"></i> Shop Mobiles
+        </a>
+      </div>
+      <div class="slide-product-card">
+        <div class="spc-shine"></div>
+        <div class="spc-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wX6Ds-qV1W7NVT4xPV9F37XZw_cnow_bNQ&s"
+               alt="Smartphone"/>
+        </div>
+        <div class="spc-info">
+          <span class="spc-brand">SAMSUNG</span>
+          <span class="spc-name">Galaxy S24 Ultra 5G</span>
+          <span class="spc-price">₹1,29,999 <del>₹1,54,999</del></span>
+          <div class="spc-stars">★★★★★ <span>4.9</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SLIDE 5 – Air Cooler ── -->
+    <div class="slide" data-index="4" data-href="category.html?cat=cooler">
+      <div class="slide-bg">
+        <img src="https://havells.com/media/mageplaza/blog/post/h/o/how-air-coolers-are-beneficial.jpg"
+             alt="" aria-hidden="true" class="slide-bg-img"/>
+        <div class="slide-bg-overlay slide-ov-green"></div>
+      </div>
+      <div class="slide-grid" aria-hidden="true"></div>
+      <div class="slide-content">
+        <div class="slide-tag"><i class="fas fa-wind"></i> Hot Deal</div>
+        <h2 class="slide-title">Beat the<br><span class="slide-accent">Heat!</span></h2>
+        <p class="slide-desc">Desert &amp; Tower Coolers with 3-speed control.<br>Starting at just ₹4,999.</p>
+        <div class="slide-price-row">
+          <span class="slide-price">From ₹4,999</span>
+          <span class="slide-badge">−29% OFF</span>
+        </div>
+        <a href="category.html?cat=cooler" class="slide-cta" onclick="event.stopPropagation()">
+          <i class="fas fa-shopping-bag"></i> Shop Coolers
+        </a>
+      </div>
+      <div class="slide-product-card">
+        <div class="spc-shine"></div>
+        <div class="spc-img">
+          <img src="https://images.indianexpress.com/2023/09/best-smart-air-coolers.jpg?w=1200"
+               alt="Air Cooler"/>
+        </div>
+        <div class="spc-info">
+          <span class="spc-brand">SYMPHONY</span>
+          <span class="spc-name">Diet 50i Desert Cooler</span>
+          <span class="spc-price">₹8,499 <del>₹11,999</del></span>
+          <div class="spc-stars">★★★★½ <span>4.6</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /slider-stage -->
+
+  <!-- Navigation arrows -->
+  <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous slide">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next slide">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+
+  <!-- Dot indicators -->
+  <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slide indicators">
+    <button class="sdot active" data-i="0" role="tab" aria-label="Slide 1"></button>
+    <button class="sdot" data-i="1" role="tab" aria-label="Slide 2"></button>
+    <button class="sdot" data-i="2" role="tab" aria-label="Slide 3"></button>
+    <button class="sdot" data-i="3" role="tab" aria-label="Slide 4"></button>
+    <button class="sdot" data-i="4" role="tab" aria-label="Slide 5"></button>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="slider-progress" aria-hidden="true">
+    <div class="slider-progress-bar" id="sliderProgressBar"></div>
+  </div>
+
+  <!-- Stats strip -->
+  <div class="hero-stats-bar">
+    <div class="hsb-item"><strong>50K+</strong><span>Happy Customers</span></div>
+    <div class="hsb-div"></div>
+    <div class="hsb-item"><strong>2,000+</strong><span>Products</span></div>
+    <div class="hsb-div"></div>
+    <div class="hsb-item"><strong>4.8 ★</strong><span>Avg Rating</span></div>
+    <div class="hsb-div"></div>
+    <div class="hsb-item"><strong>Free</strong><span>Shipping ₹999+</span></div>
+  </div>
+
+</section>
+
+<!-- ═══ CATEGORY TILES ═══════════════════════════════════════════════════════ -->
+<section class="cat-section" id="deals">
+  <div class="container">
+    <div class="section-head">
+      <h2>Shop by Category</h2>
+      <p>Explore our wide range of premium electronics</p>
+    </div>
+    <div class="cat-grid">
+      <a href="category.html?cat=tv" class="cat-tile">
+        <div class="cat-tile-img">
+          <!-- TV IMAGE -->
+          <img src="https://www.shutterstock.com/image-photo/multiple-fast-video-screens-popping-260nw-2617916249.jpg" alt="TV"/>
+        </div>
+        <span>TV & Entertainment</span>
+      </a>
+      <a href="category.html?cat=ac" class="cat-tile">
+        <div class="cat-tile-img">
+          <!-- AC IMAGE -->
+          <img src="https://img.freepik.com/premium-photo/silver-blue-electric-device-with-number-2-it_1299106-23159.jpg?semt=ais_hybrid&w=740&q=80" alt="AC"/>
+        </div>
+        <span>Air Conditioners</span>
+      </a>
+      <a href="category.html?cat=laptop" class="cat-tile">
+        <div class="cat-tile-img">
+          <!-- LAPTOP IMAGE -->
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&q=80&auto=format&fit=crop" alt="Laptop"/>
+        </div>
+        <span>Laptops</span>
+      </a>
+      <a href="category.html?cat=smartphone" class="cat-tile">
+        <div class="cat-tile-img">
+          <!-- SMARTPHONE IMAGE -->
+          <img src="https://candytech.in/wp-content/uploads/2021/03/Redmi-Note-10-Pro.jpg" alt="Smartphone"/>
+        </div>
+        <span>Smartphones</span>
+      </a>
+      <a href="category.html?cat=fridge" class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=300&q=80&auto=format&fit=crop" alt="Fridge"/>
+        </div>
+        <span>Refrigerators</span>
+      </a>
+      <a href="category.html?cat=cooler" class="cat-tile">
+        <div class="cat-tile-img">
+          <!-- COOLER IMAGE -->
+          <img src="https://tiimg.tistatic.com/fp/1/008/326/100-watt-rectangular-portable-electric-single-phase-plastic-air-cooler-701.jpg" alt="Cooler"/>
+        </div>
+        <span>Air Coolers</span>
+      </a>
+      <a href="category.html?cat=fan" class="cat-tile">
+        <div class="cat-tile-img">
+          <!-- FAN IMAGE -->
+          <img src="https://p.turbosquid.com/ts-thumb/Oo/rMVQWc/IQfPGaRH/fans/jpg/1661732403/300x300/sharp_fit_q85/544ddd80b3b269bd0f7f40822ef800b33b24af2c/fans.jpg" alt="Fan"/>
+        </div>
+        <span>Fans</span>
+      </a>
+      <a href="category.html?cat=smartwatch" class="cat-tile">
+        <div class="cat-tile-img">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&q=80&auto=format&fit=crop" alt="Smart Watch"/>
+        </div>
+        <span>Smart Watches</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ OFFER BANNERS ═════════════════════════════════════════════════════════ -->
+<section class="offer-section">
+  <div class="container">
+    <div class="offer-grid">
+      <div class="offer-card oc-blue" onclick="location.href='category.html?cat=ac'">
+        <div class="oc-text">
+          <h3>Stay Cool</h3>
+          <p>Up to <strong>40% OFF</strong> on Inverter ACs</p>
+          <a href="category.html?cat=ac" class="oc-link">Shop ACs <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="oc-img">
+          <!-- AC IMAGE -->
+          <img src="https://img.freepik.com/premium-photo/beautiful-girl-stands-air-conditioning-stream-fresh-cold-air-against-gray-wall-concept-heat-cool-air-cooling-freshness_99433-3506.jpg" alt="AC"/>
+        </div>
+      </div>
+      <div class="offer-card oc-teal" onclick="location.href='category.html?cat=tv'">
+        <div class="oc-text">
+          <h3>Cinema at Home</h3>
+          <p>QLED 4K TVs from <strong>₹28,999</strong></p>
+          <a href="category.html?cat=tv" class="oc-link">Shop TVs <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="oc-img">
+          <!-- TV IMAGE -->
+          <img src="https://www.shutterstock.com/image-photo/group-fans-watching-hockey-moment-260nw-1291792990.jpg" alt="TV"/>
+        </div>
+      </div>
+      <div class="offer-card oc-purple" onclick="location.href='category.html?cat=smartphone'">
+        <div class="oc-text">
+          <h3>New Smartphones</h3>
+          <p>Flagship phones at <strong>up to 25% OFF</strong></p>
+          <a href="category.html?cat=smartphone" class="oc-link">Shop Mobiles <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="oc-img">
+          <!-- SMARTPHONE IMAGE -->
+          <img src="https://w0.peakpx.com/wallpaper/966/491/HD-wallpaper-samsung-galaxy-s23-android-13.jpg" alt="Phone"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEATURED PRODUCTS ════════════════════════════════════════════════════ -->
+<section class="section products-section" id="products">
+  <div class="container">
+    <div class="section-head">
+      <h2>🔥 Top Summer Deals</h2>
+      <p>Handpicked best sellers — limited stock at these prices</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-bar">
+      <button class="flt active" data-f="all">All</button>
+      <button class="flt" data-f="appliances">Appliances</button>
+      <button class="flt" data-f="entertainment">Entertainment</button>
+      <button class="flt" data-f="computers">Computers</button>
+      <button class="flt" data-f="mobiles">Mobiles</button>
+      <button class="flt" data-f="smart">Smart Devices</button>
+    </div>
+
+    <!-- Sort bar -->
+    <div class="sort-bar">
+      <span id="productCount" class="count-label"></span>
+      <div class="sort-right">
+        <label for="sortSel">Sort:</label>
+        <select id="sortSel" onchange="sortProducts()">
+          <option value="default">Featured</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+          <option value="discount">Best Discount</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid"></div>
+    <div class="load-more-wrap">
+      <button class="btn-outline" id="loadMoreBtn" onclick="loadMore()">
+        <i class="fas fa-plus"></i> Load More Products
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHY US ════════════════════════════════════════════════════════════════ -->
+<section class="why-section section" id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2>Why Choose Elite Electronics?</h2>
+      <p>We deliver more than just products — we deliver trust</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon bg-blue"><i class="fas fa-rocket"></i></div>
+        <h3>Fast Delivery</h3>
+        <p>Same-day delivery in select cities. 24-hour dispatch guaranteed on all orders.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon bg-green"><i class="fas fa-shield-alt"></i></div>
+        <h3>Genuine Products</h3>
+        <p>100% original products with official brand warranty on every purchase.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon bg-orange"><i class="fas fa-tags"></i></div>
+        <h3>Best Price</h3>
+        <p>Price match guarantee. We'll beat any price you find elsewhere, period.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon bg-purple"><i class="fas fa-undo-alt"></i></div>
+        <h3>Easy Returns</h3>
+        <p>7-day hassle-free returns. No questions asked. Instant refund processed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS MARQUEE -->
+<div class="brands-bar">
+  <div class="brands-track">
+    <span>Samsung</span><span>LG</span><span>Sony</span><span>Apple</span><span>Daikin</span>
+    <span>Whirlpool</span><span>Bosch</span><span>OnePlus</span><span>Xiaomi</span><span>Dell</span>
+    <span>HP</span><span>Lenovo</span><span>Panasonic</span><span>Haier</span><span>Voltas</span>
+    <span>Samsung</span><span>LG</span><span>Sony</span><span>Apple</span><span>Daikin</span>
+    <span>Whirlpool</span><span>Bosch</span><span>OnePlus</span><span>Xiaomi</span><span>Dell</span>
+    <span>HP</span><span>Lenovo</span><span>Panasonic</span><span>Haier</span><span>Voltas</span>
+  </div>
+</div>
+
+<!-- CTA BANNER -->
+<section class="cta-section">
+  <div class="cta-inner container">
+    <div class="cta-text">
+      <h2>Don't Miss the Summer Sale!</h2>
+      <p>Limited-time deals on premium electronics. Grab yours before stock runs out.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary"><i class="fas fa-shopping-bag"></i> Shop Now</a>
+        <a href="#deals" class="btn-ghost">Explore Deals <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="cta-img-stack" aria-hidden="true">
+      <img class="cta-p1" src="https://www.iqelectronics.in/wp-content/uploads/2023/02/IQ-32-Inch-Smart-TV-View.jpg" alt="TV"/>
+      <img class="cta-p2" src="https://images.pexels.com/photos/11216260/pexels-photo-11216260.jpeg?cs=srgb&dl=pexels-keifercosta-11216260.jpg&fm=jpg" alt="Phone"/>
+      <img class="cta-p3" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=200&q=80&auto=format&fit=crop" alt="Laptop"/>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══════════════════════════════════════════════════════════════ -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <h2>Get In Touch</h2>
+      <p>We're here to help, 7 days a week</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <div class="cinfo">
+          <span class="ci-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <div><b>Our Store</b><p>123 Tech Avenue, Electronics Hub, Chennai – 600001</p></div>
+        </div>
+        <div class="cinfo">
+          <span class="ci-icon"><i class="fas fa-phone"></i></span>
+          <div><b>Call Us</b><p>1800-123-4567 (Toll Free)</p></div>
+        </div>
+        <div class="cinfo">
+          <span class="ci-icon"><i class="fas fa-envelope"></i></span>
+          <div><b>Email</b><p>support@eliteelectronics.in</p></div>
+        </div>
+        <div class="cinfo">
+          <span class="ci-icon"><i class="fas fa-clock"></i></span>
+          <div><b>Hours</b><p>Monday – Saturday: 9am to 8pm</p></div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required/>
+          <input type="email" placeholder="Email Address" required/>
+        </div>
+        <input type="text" placeholder="Subject"/>
+        <textarea rows="4" placeholder="Your message…" required></textarea>
+        <button type="submit" class="btn-primary" style="width:100%">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="fbrand">
+        <div class="logo-text">
+          <span class="logo-icon"><i class="fas fa-bolt"></i></span> Elite<span class="accent">Electronics</span>
+        </div>
+        <p>Your one-stop destination for premium electronics at unbeatable prices across India.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="#products">Shop</a>
+        <a href="#deals">Deals</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Categories</h4>
+        <a href="category.html?cat=ac">Air Conditioners</a>
+        <a href="category.html?cat=tv">Televisions</a>
+        <a href="category.html?cat=laptop">Laptops</a>
+        <a href="category.html?cat=smartphone">Smartphones</a>
+        <a href="category.html?cat=smartwatch">Smart Watches</a>
+      </div>
+      <div class="fcol">
+        <h4>Newsletter</h4>
+        <p>Get exclusive deals straight to your inbox</p>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter"/>
+          <button class="btn-primary" onclick="subscribeNewsletter(this)">Join</button>
+        </div>
+        <div class="trust-badges">
+          <span><i class="fas fa-lock"></i> Secure</span>
+          <span><i class="fas fa-shield-alt"></i> Genuine</span>
+          <span><i class="fas fa-undo"></i> Returns</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Elite Electronics. All rights reserved. Made with <i class="fas fa-heart" style="color:#ef4444"></i> in India.</p>
+      <div class="pay-icons">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fab fa-google-pay"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ SIDEBARS ══════════════════════════════════════════════════════════════ -->
+<div class="overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="sidebar" id="cartSidebar" aria-label="Shopping Cart">
+  <div class="sidebar-head">
+    <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+    <button onclick="toggleCart()" aria-label="Close cart"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="sidebar-body" id="cartItems">
+    <div class="empty-state"><i class="fas fa-box-open"></i><p>Your cart is empty</p></div>
+  </div>
+  <div class="sidebar-foot" id="cartFoot" style="display:none">
+    <div class="cart-total">Total: <strong id="cartTotal">₹0</strong></div>
+    <div class="cart-foot-note"><i class="fas fa-truck"></i> Free delivery on this order</div>
+    <button class="btn-primary" style="width:100%;margin-top:10px" onclick="checkout()">
+      Checkout <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+</aside>
+
+<div class="overlay" id="wishlistOverlay" onclick="toggleWishlist()"></div>
+<aside class="sidebar wishlist-sb" id="wishlistSidebar" aria-label="Wishlist">
+  <div class="sidebar-head">
+    <h3><i class="fas fa-heart"></i> Wishlist</h3>
+    <button onclick="toggleWishlist()" aria-label="Close wishlist"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="sidebar-body" id="wishlistItems">
+    <div class="empty-state"><i class="fas fa-heart-broken"></i><p>Nothing saved yet</p></div>
+  </div>
+</aside>
+
+<!-- ═══ LOGIN MODAL ═══════════════════════════════════════════════════════════ -->
+<div class="modal-bg" id="modalBg" onclick="closeModalOutside(event)" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="modal-x" onclick="toggleModal()" aria-label="Close modal"><i class="fas fa-times"></i></button>
+    <div class="modal-brand">
+      <span class="logo-icon" style="width:32px;height:32px;font-size:.85rem"><i class="fas fa-bolt"></i></span>
+      Elite<span style="color:var(--primary)">Electronics</span>
+    </div>
+    <div class="modal-tabs">
+      <button class="mtab active" onclick="switchTab('login',this)">Login</button>
+      <button class="mtab" onclick="switchTab('signup',this)">Sign Up</button>
+    </div>
+    <div id="loginTab">
+      <h3>Welcome Back!</h3>
+      <p class="modal-sub">Sign in to your account</p>
+      <label class="minput-label">Email</label>
+      <input class="minput" type="email" placeholder="you@email.com"/>
+      <label class="minput-label">Password</label>
+      <input class="minput" type="password" placeholder="••••••••"/>
+      <button class="btn-primary" style="width:100%" onclick="loginUser()">Login to Account</button>
+      <p class="mfooter">Forgot password? <a href="#">Reset here</a></p>
+    </div>
+    <div id="signupTab" style="display:none">
+      <h3>Create Account</h3>
+      <p class="modal-sub">Join 50,000+ happy customers</p>
+      <label class="minput-label">Full Name</label>
+      <input class="minput" type="text" placeholder="Your Name"/>
+      <label class="minput-label">Email</label>
+      <input class="minput" type="email" placeholder="you@email.com"/>
+      <label class="minput-label">Password</label>
+      <input class="minput" type="password" placeholder="Create password"/>
+      <button class="btn-primary" style="width:100%" onclick="signupUser()">Create Account</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="alert"></div>
+
+<script src="products-data.js"></script>
+<script src="script.js"></script>
+<script>
+/* ═══════════════════════════════════════════════
+   ELITE ELECTRONICS — 3D HERO SLIDER
+   Premium carousel with depth, parallax & transitions
+═══════════════════════════════════════════════ */
+(function () {
+  'use strict';
+
+  // ── CONFIG ──────────────────────────────────
+  const AUTO_INTERVAL  = 5500;   // ms between auto-advances
+  const ANIM_DURATION  = 800;    // ms for slide transition
+  const TOTAL_SLIDES   = 5;
+
+  // ── STATE ───────────────────────────────────
+  let current     = 0;
+  let prev        = -1;
+  let isAnimating = false;
+  let autoTimer   = null;
+  let progressTimer = null;
+  let progressStart = null;
+
+  // ── ELEMENTS ────────────────────────────────
+  const stage    = document.getElementById('sliderStage');
+  const btnPrev  = document.getElementById('sliderPrev');
+  const btnNext  = document.getElementById('sliderNext');
+  const dots     = document.querySelectorAll('.sdot');
+  const progBar  = document.getElementById('sliderProgressBar');
+  const slides   = document.querySelectorAll('.slide');
+
+  if (!stage || !slides.length) return;
+
+  // ── INIT ─────────────────────────────────────
+  function init() {
+    applyPositions(current, null, 'none');
+    bindEvents();
+    startAuto();
+    startProgress();
+  }
+
+  // ── POSITIONS ────────────────────────────────
+  // Each slide gets a CSS class based on its offset from current:
+  //   .is-active   → front, full opacity, scale 1
+  //   .is-prev     → slightly behind left,  blur, scale 0.88
+  //   .is-next     → slightly behind right, blur, scale 0.88
+  //   .is-far-prev → deep behind left,  invisible
+  //   .is-far-next → deep behind right, invisible
+  function applyPositions(cur, prv, direction) {
+    slides.forEach((sl, i) => {
+      sl.classList.remove('is-active','is-prev','is-next','is-far-prev','is-far-next','is-entering-left','is-entering-right','is-leaving-left','is-leaving-right');
+
+      const offset = ((i - cur) % TOTAL_SLIDES + TOTAL_SLIDES) % TOTAL_SLIDES;
+      // Normalized offset: 0=active, 1=next, TOTAL-1=prev, etc.
+      const norm = offset <= Math.floor(TOTAL_SLIDES / 2) ? offset : offset - TOTAL_SLIDES;
+
+      if (norm === 0) {
+        sl.classList.add('is-active');
+        // Parallax: move bg slightly when entering
+        if (direction === 'next' && i === cur) {
+          sl.classList.add('is-entering-right');
+          setTimeout(() => sl.classList.remove('is-entering-right'), ANIM_DURATION + 100);
+        } else if (direction === 'prev' && i === cur) {
+          sl.classList.add('is-entering-left');
+          setTimeout(() => sl.classList.remove('is-entering-left'), ANIM_DURATION + 100);
+        }
+      } else if (norm === 1)  { sl.classList.add('is-next'); }
+      else if (norm === -1)   { sl.classList.add('is-prev'); }
+      else if (norm > 1)      { sl.classList.add('is-far-next'); }
+      else                    { sl.classList.add('is-far-prev'); }
+    });
+
+    // Handle leaving slide
+    if (prv !== null && prv !== cur) {
+      const leavingSl = slides[prv];
+      if (direction === 'next') {
+        leavingSl.classList.add('is-leaving-left');
+        setTimeout(() => leavingSl.classList.remove('is-leaving-left'), ANIM_DURATION + 50);
+      } else if (direction === 'prev') {
+        leavingSl.classList.add('is-leaving-right');
+        setTimeout(() => leavingSl.classList.remove('is-leaving-right'), ANIM_DURATION + 50);
+      }
+    }
+
+    updateDots(cur);
+  }
+
+  // ── GO TO SLIDE ──────────────────────────────
+  function goTo(index, direction) {
+    if (isAnimating || index === current) return;
+    isAnimating = true;
+    prev = current;
+    current = ((index % TOTAL_SLIDES) + TOTAL_SLIDES) % TOTAL_SLIDES;
+    applyPositions(current, prev, direction);
+    setTimeout(() => { isAnimating = false; }, ANIM_DURATION + 60);
+    resetProgress();
+  }
+
+  function goNext() { goTo(current + 1, 'next'); }
+  function goPrev() { goTo(current - 1, 'prev'); }
+
+  // ── DOTS ─────────────────────────────────────
+  function updateDots(cur) {
+    dots.forEach((d, i) => {
+      d.classList.toggle('active', i === cur);
+      d.setAttribute('aria-selected', i === cur ? 'true' : 'false');
+    });
+  }
+
+  // ── AUTO PLAY ────────────────────────────────
+  function startAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(goNext, AUTO_INTERVAL);
+  }
+  function stopAuto() { clearInterval(autoTimer); }
+  function resetAuto() { stopAuto(); startAuto(); }
+
+  // ── PROGRESS BAR ─────────────────────────────
+  function startProgress() {
+    if (!progBar) return;
+    progressStart = performance.now();
+    if (progressTimer) cancelAnimationFrame(progressTimer);
+    function tick(now) {
+      const elapsed = now - progressStart;
+      const pct = Math.min((elapsed / AUTO_INTERVAL) * 100, 100);
+      progBar.style.width = pct + '%';
+      if (pct < 100) progressTimer = requestAnimationFrame(tick);
+    }
+    progressTimer = requestAnimationFrame(tick);
+  }
+  function resetProgress() {
+    if (progressTimer) cancelAnimationFrame(progressTimer);
+    if (progBar) progBar.style.width = '0%';
+    startProgress();
+  }
+
+  // ── EVENTS ───────────────────────────────────
+  function bindEvents() {
+    btnPrev?.addEventListener('click', () => { goPrev(); resetAuto(); });
+    btnNext?.addEventListener('click', () => { goNext(); resetAuto(); });
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const i = +dot.dataset.i;
+        const dir = i > current ? 'next' : 'prev';
+        goTo(i, dir);
+        resetAuto();
+      });
+    });
+
+    // Click on slide → navigate to its category
+    slides.forEach(sl => {
+      sl.addEventListener('click', () => {
+        if (sl.classList.contains('is-active')) {
+          const href = sl.dataset.href;
+          if (href) window.location.href = href;
+        } else {
+          // Click on side slide → bring to front
+          const i = +sl.dataset.index;
+          const dir = i > current ? 'next' : 'prev';
+          goTo(i, dir);
+          resetAuto();
+        }
+      });
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowLeft')  { goPrev(); resetAuto(); }
+      if (e.key === 'ArrowRight') { goNext(); resetAuto(); }
+    });
+
+    // Touch / swipe
+    let touchStartX = 0;
+    stage.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    stage.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) {
+        if (dx < 0) { goNext(); resetAuto(); }
+        else        { goPrev(); resetAuto(); }
+      }
+    }, { passive: true });
+
+    // Pause on hover
+    stage.addEventListener('mouseenter', stopAuto);
+    stage.addEventListener('mouseleave', () => { startAuto(); resetProgress(); });
+  }
+
+  // ── KICK OFF ─────────────────────────────────
+  init();
+})();
+</script>
+</body>
+</html>

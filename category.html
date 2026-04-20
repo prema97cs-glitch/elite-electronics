@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Electronics – Premium Electronics Store</title>
+  <!-- FAVICON – inline base64, works without a server -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwYTZlZmQiLz48cG9seWdvbiBwb2ludHM9IjIwLDMgMTEsMTggMTcsMTggMTIsMjkgMjMsMTIgMTcsMTIiIGZpbGw9IiNmN2M5NDgiLz48L3N2Zz4="/>
+  <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiMwYTZlZmQiLz48cG9seWdvbiBwb2ludHM9IjIwLDMgMTEsMTggMTcsMTggMTIsMjkgMjMsMTIgMTcsMTIiIGZpbGw9IiNmN2M5NDgiLz48L3N2Zz4="/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span><i class="fas fa-bolt"></i> Free shipping above ₹999 | Use code <b>ELITE10</b> for 10% OFF</span>
+    <span><i class="fas fa-phone-alt"></i> 1800-123-4567</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-icon"><i class="fas fa-bolt"></i></span>
+    <span class="logo-text">Elite<span class="accent">Electronics</span></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="index.html#products" class="nav-link">Shop</a>
+    <div class="dropdown">
+      <a class="nav-link dropdown-toggle active">Categories <i class="fas fa-chevron-down"></i></a>
+      <div class="dropdown-menu mega-menu">
+        <div class="mega-col">
+          <h5>🏠 Appliances</h5>
+          <a href="category.html?cat=ac">Air Conditioners</a>
+          <a href="category.html?cat=cooler">Air Coolers</a>
+          <a href="category.html?cat=fan">Fans</a>
+          <a href="category.html?cat=fridge">Refrigerators</a>
+          <a href="category.html?cat=washer">Washing Machines</a>
+        </div>
+        <div class="mega-col">
+          <h5>📺 Entertainment</h5>
+          <a href="category.html?cat=tv">Televisions</a>
+          <a href="category.html?cat=soundbar">Soundbars</a>
+          <a href="category.html?cat=speaker">Speakers</a>
+          <a href="category.html?cat=projector">Projectors</a>
+        </div>
+        <div class="mega-col">
+          <h5>💻 Computers</h5>
+          <a href="category.html?cat=laptop">Laptops</a>
+          <a href="category.html?cat=desktop">Desktops</a>
+          <a href="category.html?cat=monitor">Monitors</a>
+          <a href="category.html?cat=printer">Printers</a>
+        </div>
+        <div class="mega-col">
+          <h5>📱 Mobiles</h5>
+          <a href="category.html?cat=smartphone">Smartphones</a>
+          <a href="category.html?cat=tablet">Tablets</a>
+          <a href="category.html?cat=earphone">Earphones</a>
+          <a href="category.html?cat=powerbank">Power Banks</a>
+        </div>
+        <div class="mega-col">
+          <h5>💡 Smart Devices</h5>
+          <a href="category.html?cat=smartbulb">Smart Bulbs</a>
+          <a href="category.html?cat=cctv">CCTV Cameras</a>
+          <a href="category.html?cat=smartwatch">Smart Watches</a>
+          <a href="category.html?cat=doorbell">Video Doorbell</a>
+        </div>
+      </div>
+    </div>
+    <a href="index.html#deals" class="nav-link">Deals</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="Search products, brands…" autocomplete="off"/>
+      <button onclick="doSearch()"><i class="fas fa-search"></i></button>
+      <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
+    <button class="icon-btn" onclick="toggleWishlist()"><i class="fas fa-heart"></i><span class="badge" id="wishlistCount">0</span></button>
+    <button class="icon-btn" onclick="toggleCart()"><i class="fas fa-shopping-cart"></i><span class="badge" id="cartCount">0</span></button>
+    <button class="btn-login" onclick="toggleModal()"><i class="fas fa-user"></i> Login</button>
+  </div>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+  <div class="container">
+    <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+    <span id="breadcrumbCat">All Products</span>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<main class="cat-page">
+  <div class="container cat-layout">
+
+    <!-- SIDEBAR FILTERS -->
+    <aside class="filter-sidebar" id="filterSidebar">
+      <div class="fs-header">
+        <h3><i class="fas fa-sliders-h"></i> Filters</h3>
+        <button class="clear-btn" onclick="clearFilters()">Clear All</button>
+      </div>
+
+      <!-- Brand Filter -->
+      <div class="filter-group" id="brandFilterGroup">
+        <h4>Brand</h4>
+        <div class="filter-list" id="brandList"></div>
+      </div>
+
+      <!-- Price Range -->
+      <div class="filter-group">
+        <h4>Price Range</h4>
+        <div class="price-inputs">
+          <input type="number" id="minPrice" placeholder="Min ₹" min="0"/>
+          <span>–</span>
+          <input type="number" id="maxPrice" placeholder="Max ₹" min="0"/>
+        </div>
+        <button class="apply-btn" onclick="applyPriceFilter()">Apply</button>
+      </div>
+
+      <!-- Rating Filter -->
+      <div class="filter-group">
+        <h4>Minimum Rating</h4>
+        <div class="filter-list">
+          <label class="fcheck"><input type="radio" name="rating" value="4.5" onchange="applyRatingFilter(this.value)"> 4.5★ & above</label>
+          <label class="fcheck"><input type="radio" name="rating" value="4" onchange="applyRatingFilter(this.value)"> 4★ & above</label>
+          <label class="fcheck"><input type="radio" name="rating" value="3" onchange="applyRatingFilter(this.value)"> 3★ & above</label>
+          <label class="fcheck"><input type="radio" name="rating" value="0" onchange="applyRatingFilter(this.value)"> All</label>
+        </div>
+      </div>
+
+      <!-- Sort -->
+      <div class="filter-group">
+        <h4>Sort By</h4>
+        <select class="sort-select" onchange="applySort(this.value)" id="sortSelect">
+          <option value="default">Featured</option>
+          <option value="price_asc">Price: Low to High</option>
+          <option value="price_desc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+          <option value="discount">Biggest Discount</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- PRODUCT AREA -->
+    <div class="product-area">
+      <div class="pa-header">
+        <h2 id="catTitle">All Products</h2>
+        <div class="pa-meta">
+          <span id="resultCount">Loading…</span>
+          <button class="mobile-filter-btn" onclick="toggleMobileFilter()"><i class="fas fa-sliders-h"></i> Filters</button>
+        </div>
+      </div>
+
+      <!-- Brand Quick Filters (top chips) -->
+      <div class="brand-chips" id="brandChips"></div>
+
+      <div class="products-grid" id="catGrid"></div>
+
+      <div id="noresult" class="no-result" style="display:none">
+        <i class="fas fa-search"></i>
+        <p>No products match your filters. <a onclick="clearFilters()" style="cursor:pointer">Clear filters</a></p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER (compact) -->
+<footer class="footer footer-compact">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© 2025 Elite Electronics. All rights reserved.</p>
+      <div class="pay-icons"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-paypal"></i></div>
+    </div>
+  </div>
+</footer>
+
+<!-- CART SIDEBAR -->
+<div class="overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<aside class="sidebar" id="cartSidebar">
+  <div class="sidebar-head"><h3><i class="fas fa-shopping-cart"></i> Your Cart</h3><button onclick="toggleCart()"><i class="fas fa-times"></i></button></div>
+  <div class="sidebar-body" id="cartItems"><div class="empty-state"><i class="fas fa-box-open"></i><p>Your cart is empty</p></div></div>
+  <div class="sidebar-foot" id="cartFoot" style="display:none">
+    <div class="cart-total">Total: <strong id="cartTotal">₹0</strong></div>
+    <button class="btn-primary" style="width:100%;margin-top:10px" onclick="checkout()">Checkout <i class="fas fa-arrow-right"></i></button>
+  </div>
+</aside>
+
+<!-- WISHLIST SIDEBAR -->
+<div class="overlay" id="wishlistOverlay" onclick="toggleWishlist()"></div>
+<aside class="sidebar wishlist-sb" id="wishlistSidebar">
+  <div class="sidebar-head"><h3><i class="fas fa-heart"></i> Wishlist</h3><button onclick="toggleWishlist()"><i class="fas fa-times"></i></button></div>
+  <div class="sidebar-body" id="wishlistItems"><div class="empty-state"><i class="fas fa-heart-broken"></i><p>Nothing saved yet</p></div></div>
+</aside>
+
+<!-- LOGIN MODAL -->
+<div class="modal-bg" id="modalBg" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <button class="modal-x" onclick="toggleModal()"><i class="fas fa-times"></i></button>
+    <div class="modal-tabs">
+      <button class="mtab active" onclick="switchTab('login',this)">Login</button>
+      <button class="mtab" onclick="switchTab('signup',this)">Sign Up</button>
+    </div>
+    <div id="loginTab">
+      <h3>Welcome Back!</h3>
+      <input class="minput" type="email" placeholder="Email Address"/>
+      <input class="minput" type="password" placeholder="Password"/>
+      <button class="btn-primary" style="width:100%" onclick="loginUser()">Login</button>
+    </div>
+    <div id="signupTab" style="display:none">
+      <h3>Create Account</h3>
+      <input class="minput" type="text" placeholder="Full Name"/>
+      <input class="minput" type="email" placeholder="Email Address"/>
+      <input class="minput" type="password" placeholder="Password"/>
+      <button class="btn-primary" style="width:100%" onclick="signupUser()">Create Account</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="products-data.js"></script>
+<script src="script.js"></script>
+<script src="category.js"></script>
+</body>
+</html>
